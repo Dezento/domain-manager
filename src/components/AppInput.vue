@@ -14,6 +14,9 @@ const { value, errorMessage, handleBlur, handleChange } = useField(
   name,
   undefined,
 )
+
+
+
 </script>
 
 <script lang="ts">
@@ -52,7 +55,7 @@ export default {
       :placeholder="placeholder"
     />
 
-    <p v-show="errorMessage" class="text-red-700 text-sm mt-1">
+    <p v-show="errorMessage" class="text-red-700 text-sm my-1">
       {{ errorMessage }}
     </p>
   </div>

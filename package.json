@@ -17,6 +17,7 @@
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^8.5.1",
     "nanoid": "^4.0.0",
+    "node-fetch": "^3.2.10",
     "postcss": "^8.4.18",
     "vee-validate": "^4.7.0",
     "vue": "^3.2.37",

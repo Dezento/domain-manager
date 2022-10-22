@@ -11,3 +11,13 @@ export const userLoginSchema = object({
 })
 
 export const useRegistrationSchema = userDetailSchema.concat(userLoginSchema)
+
+export const domainSchema = object({
+    domainUsername: string().required().label('Domain Provider Username Or Email'),
+    domainPassword: string().required().label('Domain Provider Password'),
+    domain: string().required().label('Domain'),
+    hostUsername: string().label('Host Provider Username Or Email'),
+    hostPassword: string().label('Host Provider Password'),
+    host: string().label('Host'),
+   
+})
