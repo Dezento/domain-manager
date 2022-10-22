@@ -26,9 +26,8 @@ const { handleSubmit, setValues, isSubmitting } = useForm<UserDetails>({
 })
 
 const onSubmit = handleSubmit(async (values) => {
-  console.log(values)
-  const { data, message } = await createUser(values)
 
+  const { data, message } = await createUser(values)
 
   if(!data){
 		errorMessage.value = message

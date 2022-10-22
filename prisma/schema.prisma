@@ -17,8 +17,14 @@ model Domain {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  name     String   @db.VarChar(255)
+  name     String   @unique
+  domainUsername String 
+  domainPassword String 
+  hostUsername String 
+  hostPassword String 
+  host String
   expiry  DateTime
+  
 }
 
 // model Profile {
