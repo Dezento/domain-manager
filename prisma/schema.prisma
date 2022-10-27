@@ -18,11 +18,13 @@ model Domain {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   name     String   @unique
+  registrar String?
   domainUsername String 
   domainPassword String 
-  hostUsername String 
-  hostPassword String 
-  host String
+  hostUsername String?
+  hostPassword String?
+  host String?
+  hostIp String?
   expiry  DateTime
   
 }

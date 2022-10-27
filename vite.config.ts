@@ -13,23 +13,28 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  plugins: [ VueRouter({
+  plugins: 
+  [ VueRouter({
     /* options */
     }),
-    vue(),
+    vue({
+      reactivityTransform: true,
+    }),
     Pages(),
     Components({
       dts: true,
     }),
     AutoImport({
+      include: [/\.[tj]s$/, /\.vue$/, /\.vue\?vue/],
+      dts: 'src/auto-imports.d.ts',
       imports: [
         'vue',
-        //'vue/macros',
         'vue-router',
+        'vue/macros',
+        '@vueuse/head',
         '@vueuse/core',
         'vee-validate',
       ],
-      dts: true,
       dirs: ['src/composables'],
       vueTemplate: true,
     }),

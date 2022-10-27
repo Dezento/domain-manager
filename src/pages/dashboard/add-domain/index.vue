@@ -5,7 +5,6 @@ import type { Domain } from "@/types/domain";
 
 const router = useRouter();
 
-
 const { handleSubmit, setValues, isSubmitting } = useForm<Domain>({
   validationSchema: domainSchema,
 });
@@ -68,7 +67,15 @@ const addDomain = async (data: Domain) => {
       <div>
         <p class="my-4">Host Provider Credentials:</p>
         <div>
-          <AppInput type="text" name="host" label="Host IP" placeholder="Enter Host IP" />
+          <AppInput type="text" name="host" label="Host Name" placeholder="Enter Host Name" />
+        </div>
+        <div>
+          <AppInput
+            type="text"
+            name="hostIp"
+            label="Host IP"
+            placeholder="Enter Host IP"
+          />
         </div>
       </div>
       <div class="grid mb-6 md:gap-6 lg:grid-cols-2">

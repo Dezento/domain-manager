@@ -18,6 +18,7 @@ export const domainSchema = object({
     domain: string().required().label('Domain'),
     hostUsername: string().label('Host Provider Username Or Email'),
     hostPassword: string().label('Host Provider Password'),
+    hostIp: string().label('Host Ip'),
     host: string().label('Host'),
    
 })
