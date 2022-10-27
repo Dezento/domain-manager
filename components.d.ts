@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     Dashboard: typeof import('./src/components/dashboard.vue')['default']
     DomainList: typeof import('./src/components/DomainList.vue')['default']
     ForgotPassword: typeof import('./src/components/ForgotPassword.vue')['default']
+    LoadingSkeleton: typeof import('./src/components/LoadingSkeleton.vue')['default']
     Login: typeof import('./src/components/Login.vue')['default']
     Navbar: typeof import('./src/components/Navbar.vue')['default']
     Register: typeof import('./src/components/Register.vue')['default']

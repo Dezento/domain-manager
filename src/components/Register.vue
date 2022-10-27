@@ -53,12 +53,7 @@ const onSubmit = handleSubmit(async (values) => {
 		<div class="container mx-auto">
 			<div class="flex justify-center px-6 my-12">
 				<!-- Row -->
-				<div class="w-full xl:w-3/4 lg:w-11/12 flex">
-					<!-- Col -->
-					<div
-						class="w-full h-96 mt-10 bg-gray-400 hidden lg:block lg:w-5/12 bg-cover rounded-l-lg"
-						style="background-image: url('https://images.unsplash.com/photo-1497005367839-6e852de72767?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=800')"
-					></div>
+				<div class="w-full xl:w-3/4 lg:w-11/12 flex justify-center">
 					<!-- Col -->
 					<div class="w-full lg:w-7/12 bg-white p-5 rounded-lg lg:rounded-l-none">
 						<h3 class="pt-4 text-2xl text-center">Create an Account!</h3>

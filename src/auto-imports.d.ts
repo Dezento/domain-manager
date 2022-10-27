@@ -107,7 +107,7 @@ declare global {
   const unrefElement: typeof import('@vueuse/core')['unrefElement']
   const until: typeof import('@vueuse/core')['until']
   const useActiveElement: typeof import('@vueuse/core')['useActiveElement']
-  const useApi: typeof import('./src/composables/useApi')['useApi']
+  const useApi: typeof import('./composables/useApi')['useApi']
   const useArrayEvery: typeof import('@vueuse/core')['useArrayEvery']
   const useArrayFilter: typeof import('@vueuse/core')['useArrayFilter']
   const useArrayFind: typeof import('@vueuse/core')['useArrayFind']
@@ -175,9 +175,9 @@ declare global {
   const useFullscreen: typeof import('@vueuse/core')['useFullscreen']
   const useGamepad: typeof import('@vueuse/core')['useGamepad']
   const useGeolocation: typeof import('@vueuse/core')['useGeolocation']
-  const useGlobalState: typeof import('./src/composables/useState')['useGlobalState']
+  const useGlobalState: typeof import('./composables/useState')['useGlobalState']
   const useHead: typeof import('@vueuse/head')['useHead']
-  const useId: typeof import('./src/composables/useId')['useId']
+  const useId: typeof import('./composables/useId')['useId']
   const useIdle: typeof import('@vueuse/core')['useIdle']
   const useImage: typeof import('@vueuse/core')['useImage']
   const useInfiniteScroll: typeof import('@vueuse/core')['useInfiniteScroll']
@@ -405,7 +405,7 @@ declare module '@vue/runtime-core' {
     readonly unrefElement: UnwrapRef<typeof import('@vueuse/core')['unrefElement']>
     readonly until: UnwrapRef<typeof import('@vueuse/core')['until']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
-    readonly useApi: UnwrapRef<typeof import('./src/composables/useApi')['useApi']>
+    readonly useApi: UnwrapRef<typeof import('./composables/useApi')['useApi']>
     readonly useArrayEvery: UnwrapRef<typeof import('@vueuse/core')['useArrayEvery']>
     readonly useArrayFilter: UnwrapRef<typeof import('@vueuse/core')['useArrayFilter']>
     readonly useArrayFind: UnwrapRef<typeof import('@vueuse/core')['useArrayFind']>
@@ -473,9 +473,9 @@ declare module '@vue/runtime-core' {
     readonly useFullscreen: UnwrapRef<typeof import('@vueuse/core')['useFullscreen']>
     readonly useGamepad: UnwrapRef<typeof import('@vueuse/core')['useGamepad']>
     readonly useGeolocation: UnwrapRef<typeof import('@vueuse/core')['useGeolocation']>
-    readonly useGlobalState: UnwrapRef<typeof import('./src/composables/useState')['useGlobalState']>
+    readonly useGlobalState: UnwrapRef<typeof import('./composables/useState')['useGlobalState']>
     readonly useHead: UnwrapRef<typeof import('@vueuse/head')['useHead']>
-    readonly useId: UnwrapRef<typeof import('./src/composables/useId')['useId']>
+    readonly useId: UnwrapRef<typeof import('./composables/useId')['useId']>
     readonly useIdle: UnwrapRef<typeof import('@vueuse/core')['useIdle']>
     readonly useImage: UnwrapRef<typeof import('@vueuse/core')['useImage']>
     readonly useInfiniteScroll: UnwrapRef<typeof import('@vueuse/core')['useInfiniteScroll']>
